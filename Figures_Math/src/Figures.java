@@ -3,12 +3,39 @@ public class Figures {
 
     static class triangle extends Figures{
         double sideA, sideB, sideC;
-        double angleAB, angleAC, angleBC;
 
         public triangle(double sideA, double sideB, double sideC) {
             this.sideA = sideA;
             this.sideB = sideB;
             this.sideC = sideC;
+            setArea(sideA, sideB, sideC);
+            setPerimeter(sideA, sideB, sideC);
+        }
+        public double getSideA() {
+            return sideA;
+        }
+
+        public double getSideB() {
+            return sideB;
+        }
+
+        public double getSideC() {
+            return sideC;
+        }
+
+        private void setPerimeter(double sideA, double sideB, double sideC) {
+            this.perimeter = sideA + sideB + sideC;
+        }
+
+        private void setArea(double sideA, double sideB, double sideC) {
+            double p = (sideA+sideB+sideC)/2;
+            this.area = Math.sqrt(p * (p-sideA) * (p - sideB) * (p - sideC));
+        }
+        public double getPerimeter() {
+            return perimeter;
+        }
+        public double getArea() {
+            return area;
         }
     }
 

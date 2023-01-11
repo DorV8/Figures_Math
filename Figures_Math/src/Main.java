@@ -31,13 +31,11 @@ public class Main {
                 System.out.println("""
                         1. Площадь треугольника
                         2. Периметр треугольника
-                        3. Углы
                         """);
                 byte variant = scanner.nextByte();
                 switch (variant) {
-                    case (1) -> System.out.println("Заглушка");
-                    case (2) -> System.out.println("Заглушка");
-                    case (3) -> System.out.println("Заглушка");
+                    case (1) -> System.out.println("Площадь треугольника со сторонами " + result.getSideA() + ", " + result.getSideB() + " и " + result.getSideC() + " равна " + result.getArea());
+                    case (2) -> System.out.println("Периметр треугольника со сторонами " + result.getSideA() + ", " + result.getSideB() + " и " + result.getSideC() + " равен " + result.getPerimeter());
                 }
             }
             case (2) -> {
