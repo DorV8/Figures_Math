@@ -27,7 +27,7 @@ public class Main {
                     }
                 }
                 Figures.triangle result = new Figures.triangle(input[0], input[1], input[2]);
-                System.out.println("Какое действие вы хотите произвести: ");
+                System.out.println("Что необходимо расчитать?: ");
                 System.out.println("""
                         1. Площадь треугольника
                         2. Периметр треугольника
@@ -45,7 +45,7 @@ public class Main {
                 System.out.println("Введите ширину: ");
                 input[1] = Math.abs(scanner.nextDouble());
                 Figures.rectangle result = new Figures.rectangle(input[0], input[1]);
-                System.out.println("Выберите действие: ");
+                System.out.println("Что необходимо расчитать?: ");
                 System.out.println("""
                         1. Периметр прямоугольника
                         2. Площадь прямоугольника
@@ -62,7 +62,7 @@ public class Main {
                 System.out.println("Введите сторону квадрата: ");
                 double input = scanner.nextDouble();
                 Figures.square result = new Figures.square(input);
-                System.out.println("Выберите действие: ");
+                System.out.println("Что необходимо расчитать?: ");
                 System.out.println("""
                         1. Периметр квадрата
                         2. Площадь квадрата
@@ -79,7 +79,7 @@ public class Main {
                 System.out.println("Введите радиус: ");
                 double input = scanner.nextDouble();
                 Figures.circle result = new Figures.circle(input);
-                System.out.println("Выберите действие: ");
+                System.out.println("Что необходимо расчитать?: ");
                 System.out.println("""
                         1. Площадь круга
                         2. Периметр круга
